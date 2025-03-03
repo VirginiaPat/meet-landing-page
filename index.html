@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Meet landing page</title>
-</head>
-<body>
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  Download v1.3
-  What is it?
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
-  01
-  Built for modern use
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  Smarter meetings, all in one place
+    <title>Virginia Patrika | Meet landing page</title>
+  </head>
 
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
+  <body>
+    <!-- HEADER -->
+    <header aria-labelledby="meet__main__page" class="header">
+      <h1 id="meet__main__page" class="visually-hidden">
+        Meet app's main page
+      </h1>
+      <a href="#"
+        ><img class="header__logo" src="assets/logo.svg" alt="Meet logo"
+      /></a>
+    </header>
 
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+    <main class="grid">
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <img class="hero__img" src="assets/tablet/image-hero.png" alt="" />
+        <h1 class="hero__title">Group Chat for Everyone</h1>
+        <p class="hero__text">
+          Meet makes it easy to connect with others face-to-face virtually and
+          collaborate across any device.
+        </p>
+        <button class="hero__btn__download">Download v1.3</button>
+        <button class="hero__btn__info">What is it?</button>
+      </section>
 
-  Download v1.3
-</body>
+      <!-- MAIN-CONTENT SECTION -->
+      <section class="main-content"></section>
+    </main>
+
+    <!-- FOOTER -CTA SECTION -->
+    <footer></footer>
+  </body>
 </html>

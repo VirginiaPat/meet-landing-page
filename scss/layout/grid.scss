@@ -1,0 +1,4 @@
+.grid {
+  grid-template-columns: repeat(4, px-to-rem(64px));
+  gap: px-to-rem(16px);
+}

@@ -1,0 +1,31 @@
+%text-preset {
+  font-family: $font-display;
+  line-height: 1.1;
+  font-weight: 900;
+
+  &-1 {
+    font-size: px-to-rem(64px);
+  }
+
+  &-2 {
+    font-size: px-to-rem(40px);
+  }
+
+  &-3 {
+    font-size: px-to-rem(16px);
+  }
+}
+
+%text-preset-4 {
+  font-family: $font-display;
+  font-size: px-to-rem(18px);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+%text-preset-5 {
+  font-family: $font-display;
+  font-size: px-to-rem(16px);
+  line-height: 1.5;
+  font-weight: 900;
+}
