@@ -3,6 +3,11 @@
   gap: 1rem;
 }
 
+body {
+  font-family: "Red Hat Display", Arial, sans-serif;
+  background-color: #fafafa;
+}
+
 .visually-hidden {
   position: absolute;
   width: 0.0625rem;
