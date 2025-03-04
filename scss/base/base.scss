@@ -61,9 +61,23 @@ body {
 }
 
 .main__content__imgs {
+  &--1,
+  &--2,
+  &--3,
+  &--4 {
+    border-radius: px-to-rem(8px);
+  }
 }
 
 .main__content__texts__container {
+  @include flex-column;
+  text-align: center;
+  gap: px-to-rem(32px);
+}
+
+.main__content__titles {
+  @include flex-column;
+  gap: px-to-rem(16px);
 }
 
 // ATTRIBUTION------------------
