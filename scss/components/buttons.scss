@@ -1,0 +1,34 @@
+.btn {
+  @extend %text-preset-5--desktop;
+  color: $color-white;
+
+  padding: px-to-rem(16px) px-to-rem(40px);
+  border-radius: px-to-rem(40px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  cursor: pointer;
+
+  &--cyan {
+    width: px-to-rem(193px);
+    height: px-to-rem(56px);
+    background-color: $color-cyan-600;
+  }
+
+  &--cyan span {
+    color: $color-cyan-300;
+  }
+
+  &--purple {
+    width: px-to-rem(161px);
+    height: px-to-rem(56px);
+    background-color: $color-purple-600;
+  }
+
+  &--purple span {
+    color: $color-purple-300;
+  }
+}

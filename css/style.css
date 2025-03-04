@@ -1,11 +1,71 @@
-.grid {
-  grid-template-columns: repeat(4, 4rem);
+.hero__title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+.hero__text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.btn {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.hero__title {
+  color: #28283d;
+}
+
+.hero__text {
+  color: #87879d;
+}
+
+.btn {
+  color: #fafafa;
+  padding: 1rem 2.5rem;
+  border-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.btn--cyan {
+  width: 12.0625rem;
+  height: 3.5rem;
+  background-color: #4d96a9;
+}
+.btn--cyan span {
+  color: #8fe3f9;
+}
+.btn--purple {
+  width: 10.0625rem;
+  height: 3.5rem;
+  background-color: #855fb1;
+}
+.btn--purple span {
+  color: #d9b8ff;
+}
+
+.grid-2cols-2rows {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
 }
 
 body {
   font-family: "Red Hat Display", Arial, sans-serif;
   background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  padding-top: 3rem;
 }
 
 .visually-hidden {
@@ -17,6 +77,56 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.hero {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.hero__img {
+  min-height: 10rem;
+  object-fit: cover;
+}
+
+.hero__texts__btns__container {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.btns__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main__content {
+  padding: 2rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.attribution {
+  padding: 0 auto;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #855fb1;
 }
 
 /*# sourceMappingURL=style.css.map */

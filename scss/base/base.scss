@@ -1,6 +1,13 @@
 body {
   font-family: $font-display;
   background-color: $color-white;
+
+  @include flex-column;
+}
+
+// HEADER---------------------
+.header {
+  padding-top: px-to-rem(48px);
 }
 
 .visually-hidden {
@@ -12,4 +19,60 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.header__logo {
+}
+
+// HERO-----------
+.hero {
+  margin-top: px-to-rem(64px);
+  margin-bottom: px-to-rem(32px);
+
+  @include flex-column;
+  justify-content: center;
+  gap: px-to-rem(48px);
+}
+
+.hero__img {
+  min-height: px-to-rem(160px);
+  object-fit: cover;
+}
+
+.hero__texts__btns__container {
+  padding: 0 px-to-rem(32px);
+
+  @include flex-column;
+  gap: px-to-rem(24px);
+  text-align: center;
+}
+
+.btns__container {
+  @include flex-column;
+  gap: px-to-rem(16px);
+}
+
+// MAIN-CONTENT SECTION ------------------
+.main__content {
+  padding: px-to-rem(32px) px-to-rem(32px) px-to-rem(64px) px-to-rem(32px);
+
+  @include flex-column;
+  gap: px-to-rem(64px);
+}
+
+.main__content__imgs {
+}
+
+.main__content__texts__container {
+}
+
+// ATTRIBUTION------------------
+.attribution {
+  padding: 0 auto;
+  font-size: px-to-rem(11px);
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: $color-purple-600;
 }

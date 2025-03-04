@@ -37,23 +37,30 @@
       /></a>
     </header>
 
-    <main class="grid">
+    <!-- MAIN -->
+    <main>
       <!-- HERO SECTION -->
       <section class="hero">
         <img class="hero__img" src="assets/tablet/image-hero.png" alt="" />
-        <h1 class="hero__title">Group Chat for Everyone</h1>
-        <p class="hero__text">
-          Meet makes it easy to connect with others face-to-face virtually and
-          collaborate across any device.
-        </p>
-        <button class="btn__download">Download v1.3</button>
-        <button class="btn__info">What is it?</button>
+        <div class="hero__texts__btns__container">
+          <h1 class="hero__title">Group Chat for Everyone</h1>
+          <p class="hero__text">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="btns__container">
+            <button class="btn btn--cyan">
+              Download&nbsp;<span>v1.3</span>
+            </button>
+            <button class="btn btn--purple">What is it?</button>
+          </div>
+        </div>
       </section>
 
       <!-- MAIN-CONTENT SECTION -->
       <section class="main__content">
         <div class="component__number">01</div>
-        <div class="main__content__imgs">
+        <div class="main__content__imgs grid-2cols-2rows">
           <img
             class="main__content__imgs--1"
             src="assets/desktop/image-woman-in-videocall.jpg"
@@ -75,15 +82,18 @@
             alt=""
           />
         </div>
-        <h2 class="main__content__title--1">Built for modern use</h2>
-        <h3 class="main__content__title--2">
-          Smarter meetings, all in one place
-        </h3>
-        <p class="main__content__text">
-          Send messages, share files, show your screen, and record your meetings
-          — all in one workspace. Control who can join with invite-only team
-          access, data encryption, and data export.
-        </p>
+        <div class="main__content__texts__container">
+          <h2 class="main__content__title--1">Built for modern use</h2>
+          <h3 class="main__content__title--2">
+            Smarter meetings, all in one place
+          </h3>
+          <p class="main__content__text">
+            Send messages, share files, show your screen, and record your meetings
+            — all in one workspace. Control who can join with invite-only team
+            access, data encryption, and data export.
+          </p>
+        </div>
+        
       </section>
     </main>
 
@@ -96,7 +106,7 @@
         Stay connected with reliable HD meetings and unlimited one-on-one and
         group video sessions.
       </p>
-      <button class="btn__download">Download v1.3</button>
+      <button class="btn btn--purple"> Download&nbsp;<span>v1.3</button>
     </footer>
 
     <!-- ATTRIBUTION -->
