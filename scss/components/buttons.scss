@@ -3,7 +3,7 @@
   color: $color-white;
 
   padding: px-to-rem(16px) px-to-rem(40px);
-  border-radius: px-to-rem(40px);
+  border-radius: px-to-rem(29px);
 
   display: flex;
   align-items: center;
@@ -13,9 +13,21 @@
   cursor: pointer;
 
   &--cyan {
-    width: px-to-rem(193px);
-    height: px-to-rem(56px);
-    background-color: $color-cyan-600;
+    &,
+    &:link,
+    &:visited {
+      width: px-to-rem(193px);
+      height: px-to-rem(56px);
+      background-color: $color-cyan-600;
+
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $color-cyan-hover;
+    }
   }
 
   &--cyan span {
@@ -23,9 +35,19 @@
   }
 
   &--purple {
-    width: px-to-rem(161px);
-    height: px-to-rem(56px);
-    background-color: $color-purple-600;
+    &,
+    &:link,
+    &:visited {
+      width: px-to-rem(161px);
+      height: px-to-rem(56px);
+      background-color: $color-purple-600;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $color-purple-hover;
+    }
   }
 
   &--purple span {

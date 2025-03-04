@@ -110,3 +110,13 @@
   @extend %text-preset-4--tablet;
   color: $color-slate-600;
 }
+
+.footer__title {
+  @extend %text-preset-2--mobile;
+  color: $color-white;
+}
+
+.fotter__text {
+  @extend %text-preset-4--tablet;
+  color: $color-white;
+}

@@ -3,7 +3,7 @@
   font-weight: 900;
   line-height: 1.1;
 }
-.main__content__title--2 {
+.footer__title, .main__content__title--2 {
   font-size: 2rem;
   font-weight: 900;
   line-height: 1.1;
@@ -14,7 +14,7 @@
   letter-spacing: 0.25rem;
   line-height: 1.1;
 }
-.main__content__text, .hero__text {
+.fotter__text, .main__content__text, .hero__text {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -46,28 +46,43 @@
   color: #87879d;
 }
 
+.footer__title {
+  color: #fafafa;
+}
+
+.fotter__text {
+  color: #fafafa;
+}
+
 .btn {
   color: #fafafa;
   padding: 1rem 2.5rem;
-  border-radius: 2.5rem;
+  border-radius: 1.8125rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   cursor: pointer;
 }
-.btn--cyan {
+.btn--cyan, .btn--cyan:link, .btn--cyan:visited {
   width: 12.0625rem;
   height: 3.5rem;
   background-color: #4d96a9;
+  transition: all 0.2s;
+}
+.btn--cyan:hover, .btn--cyan:active, .btn--cyan:focus {
+  background-color: #71c0d4;
 }
 .btn--cyan span {
   color: #8fe3f9;
 }
-.btn--purple {
+.btn--purple, .btn--purple:link, .btn--purple:visited {
   width: 10.0625rem;
   height: 3.5rem;
   background-color: #855fb1;
+}
+.btn--purple:hover, .btn--purple:active, .btn--purple:focus {
+  background-color: #b18bdd;
 }
 .btn--purple span {
   color: #d9b8ff;
@@ -95,7 +110,8 @@
   height: 3.5rem;
   border: 1px solid #d1d1df;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: #fafafa;
+  z-index: 1;
 }
 
 .grid-2cols-2rows {
@@ -184,6 +200,19 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+.footer_text__btn__container {
+  background-image: linear-gradient(to right bottom, rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), url("../../assets/mobile/image-footer.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  transform: translateY(-28px);
 }
 
 .attribution {

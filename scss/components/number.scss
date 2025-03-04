@@ -20,5 +20,7 @@
   height: px-to-rem(56px);
   border: 1px solid $color-slate-300;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: $color-white;
+
+  z-index: 1;
 }
