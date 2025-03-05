@@ -1,0 +1,15 @@
+// HEADER---------------------
+.header {
+  padding-top: px-to-rem(48px);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: px-to-rem(1px);
+  height: px-to-rem(1px);
+  padding: 0;
+  margin: px-to-rem(-1px);
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

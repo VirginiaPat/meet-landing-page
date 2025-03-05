@@ -1,0 +1,52 @@
+/* FOOTER -CTA SECTION */
+.footer {
+}
+
+.footer_text__btn__container {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-cyan-600, 0.8),
+      rgba($color-cyan-600, 0.8)
+    ),
+    url("../../assets/mobile/image-footer.jpg");
+  background-size: cover;
+  background-position: top;
+
+  padding: px-to-rem(64px) px-to-rem(32px);
+
+  @include flex-column;
+  gap: px-to-rem(24px);
+  text-align: center;
+
+  transform: translateY(-28px);
+
+  // Tablet (768px :48em )
+  @media (min-width: 48em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-cyan-600, 0.8),
+        rgba($color-cyan-600, 0.8)
+      ),
+      url("../../assets/tablet/image-footer.jpg");
+
+    padding: px-to-rem(64px) px-to-rem(130px);
+  }
+}
+
+.footer__title {
+  @extend %text-preset-2--mobile;
+  color: $color-white;
+
+  // Tablet (768px :48em )
+  @media (min-width: 48em) {
+    font-size: px-to-rem(36px);
+  }
+}
+
+.fotter__text {
+  @extend %text-preset-4--tablet;
+  color: $color-white;
+}
+
+// Tablet (768px :48em )
+// @media (min-width: 48em) {}

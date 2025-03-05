@@ -84,39 +84,3 @@
     }
   }
 }
-
-.hero__title {
-  @extend %text-preset-1--mobile;
-  color: $color-slate-900;
-}
-
-.hero__text {
-  @extend %text-preset-4--tablet;
-  color: $color-slate-600;
-}
-
-.main__content__title--1 {
-  @extend %text-preset-3--mobile;
-  text-transform: uppercase;
-  color: $color-cyan-600;
-}
-
-.main__content__title--2 {
-  @extend %text-preset-2--mobile;
-  color: $color-slate-900;
-}
-
-.main__content__text {
-  @extend %text-preset-4--tablet;
-  color: $color-slate-600;
-}
-
-.footer__title {
-  @extend %text-preset-2--mobile;
-  color: $color-white;
-}
-
-.fotter__text {
-  @extend %text-preset-4--tablet;
-  color: $color-white;
-}

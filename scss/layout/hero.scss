@@ -1,0 +1,64 @@
+// HERO-----------
+.hero {
+  margin-top: px-to-rem(64px);
+  margin-bottom: px-to-rem(32px);
+
+  @include flex-column;
+  justify-content: center;
+  gap: px-to-rem(48px);
+
+  // Tablet (768px :48em )
+  @media (min-width: 48em) {
+    margin-bottom: px-to-rem(64px);
+    gap: px-to-rem(72px);
+  }
+}
+
+.hero__img {
+  min-height: px-to-rem(160px);
+  object-fit: cover;
+
+  // Tablet (768px :48em )
+  @media (min-width: 48em) {
+    min-height: px-to-rem(303px);
+  }
+}
+
+.hero__texts__btns__container {
+  padding: 0 px-to-rem(32px);
+
+  @include flex-column;
+  gap: px-to-rem(24px);
+  text-align: center;
+
+  // Tablet (768px :48em )
+  @media (min-width: 48em) {
+    padding: 0 px-to-rem(180px);
+  }
+}
+
+.hero__title {
+  @extend %text-preset-1--mobile;
+  color: $color-slate-900;
+
+  // Tablet (768px :48em )
+  @media (min-width: 48em) {
+    font-size: px-to-rem(48px);
+  }
+}
+
+.hero__text {
+  @extend %text-preset-4--tablet;
+  color: $color-slate-600;
+}
+
+.btns__container {
+  @include flex-column;
+  gap: px-to-rem(16px);
+
+  // Tablet (768px :48em )
+  @media (min-width: 48em) {
+    @include flex-row;
+    gap: px-to-rem(17px);
+  }
+}
