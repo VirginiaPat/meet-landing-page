@@ -1,6 +1,11 @@
 // HEADER---------------------
 .header {
   padding-top: px-to-rem(48px);
+
+  /* Extra large devices 1440px:90em*/
+  @media (min-width: 90em) {
+    padding-top: px-to-rem(80px);
+  }
 }
 
 .visually-hidden {

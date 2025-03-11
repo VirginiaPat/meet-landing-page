@@ -8,3 +8,23 @@
   display: flex;
   flex-direction: row;
 }
+
+@mixin grid-3cols-1-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+@mixin grid-main-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: px-to-rem(16px);
+
+  // Tablet (768px :48em )
+  @media (min-width: 48em) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: px-to-rem(24px);
+  }
+}

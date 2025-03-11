@@ -1,26 +1,26 @@
 // NUMBER COMPONENT
 .component__number {
   @include flex-column;
-}
 
-.component__number--line {
-  width: 1px;
-  height: 80px;
-  background-color: $color-slate-300;
-}
+  &--line {
+    width: 1px;
+    height: 80px;
+    background-color: $color-slate-300;
+  }
 
-.component__number--circle {
-  @include flex-column;
-  justify-content: center;
+  &--circle {
+    @include flex-column;
+    justify-content: center;
 
-  @extend %text-preset-5--desktop;
-  color: $color-slate-600;
+    @extend %text-preset-5--desktop;
+    color: $color-slate-600;
 
-  width: px-to-rem(56px);
-  height: px-to-rem(56px);
-  border: 1px solid $color-slate-300;
-  border-radius: 50%;
-  background-color: $color-white;
+    width: px-to-rem(56px);
+    height: px-to-rem(56px);
+    border: 1px solid $color-slate-300;
+    border-radius: 50%;
+    background-color: $color-white;
 
-  z-index: 1;
+    z-index: 1;
+  }
 }
