@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github]()
-- Live Site URL: [Netlify]()
+- Solution URL: [Github](https://github.com/VirginiaPat/meet-landing-page.git)
+- Live Site URL: [Netlify](https://meet-landing-page-virgi.netlify.app/)
 
 ## My process
 
