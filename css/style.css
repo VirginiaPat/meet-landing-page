@@ -158,7 +158,7 @@
 }
 @media (min-width: 90em) {
   .hero__img-desktop--left {
-    background-image: url("../../assets/desktop/hero-left.png");
+    background-image: url("../../assets/desktop/image-hero-left.png");
     background-position: left;
     align-self: flex-start;
     margin-left: -25px;
@@ -166,7 +166,7 @@
 }
 @media (min-width: 90em) {
   .hero__img-desktop--right {
-    background-image: url("../../assets/desktop/hero-right.png");
+    background-image: url("../../assets/desktop/image-hero-right.png");
     background-position: right;
     align-self: flex-end;
     margin-right: -25px;
@@ -236,10 +236,16 @@
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+  /* Extra large devices 1440px:90em*/
 }
 @media (min-width: 48em) {
   .main__content {
     padding-top: 3.5rem;
+  }
+}
+@media (min-width: 90em) {
+  .main__content {
+    padding: 3.5rem 10rem 4.5rem 10rem;
   }
 }
 .main__content__imgs {
@@ -247,12 +253,18 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
+  /* Extra large devices 1440px:90em*/
 }
 @media (min-width: 48em) {
   .main__content__imgs {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     gap: 1.5rem;
+  }
+}
+@media (min-width: 90em) {
+  .main__content__imgs {
+    gap: 2rem;
   }
 }
 .main__content__imgs--1, .main__content__imgs--2, .main__content__imgs--3, .main__content__imgs--4 {
@@ -264,10 +276,16 @@
   align-items: center;
   text-align: center;
   gap: 2rem;
+  /* Extra large devices 1440px:90em*/
 }
 @media (min-width: 48em) {
   .main__content__texts__container {
     padding: 0 6.25rem;
+  }
+}
+@media (min-width: 90em) {
+  .main__content__texts__container {
+    padding: 0 18rem;
   }
 }
 .main__content__title {
@@ -279,29 +297,48 @@
 .main__content__title--1 {
   text-transform: uppercase;
   color: #4d96a9;
+  /* Extra large devices 1440px:90em*/
 }
 @media (min-width: 48em) {
   .main__content__title--1 {
     font-size: 0.875rem;
   }
 }
+@media (min-width: 90em) {
+  .main__content__title--1 {
+    font-size: 1rem;
+  }
+}
 .main__content__title--2 {
   color: #28283d;
+  /* Extra large devices 1440px:90em*/
 }
 @media (min-width: 48em) {
   .main__content__title--2 {
     font-size: 2.25rem;
   }
 }
+@media (min-width: 90em) {
+  .main__content__title--2 {
+    font-size: 2.5rem;
+  }
+}
 .main__content__text {
   color: #87879d;
+  /* Extra large devices 1440px:90em*/
+}
+@media (min-width: 90em) {
+  .main__content__text {
+    font-size: 1.125rem;
+  }
 }
 
 /* FOOTER -CTA SECTION */
-.footer_text__btn__container {
+.footer__text__btn__container {
   background-image: linear-gradient(to right bottom, rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), url("../../assets/mobile/image-footer.jpg");
   background-size: cover;
   background-position: top;
+  width: 100vw;
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
@@ -309,23 +346,54 @@
   gap: 1.5rem;
   text-align: center;
   transform: translateY(-28px);
+  /* Extra large devices 1440px:90em*/
 }
 @media (min-width: 48em) {
-  .footer_text__btn__container {
+  .footer__text__btn__container {
     background-image: linear-gradient(to right bottom, rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), url("../../assets/tablet/image-footer.jpg");
     padding: 4rem 8.125rem;
   }
 }
+@media (min-width: 90em) {
+  .footer__text__btn__container {
+    background-image: linear-gradient(to right bottom, rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), url("../../assets/desktop/image-footer.jpg");
+    padding: 7rem 10rem;
+    display: grid;
+    grid-template-columns: 1.7fr 1.4fr 1fr;
+    gap: 2rem;
+    text-align: start;
+    align-items: start;
+    justify-items: center;
+  }
+}
 .footer__title {
   color: #fafafa;
+  /* Extra large devices 1440px:90em*/
 }
 @media (min-width: 48em) {
   .footer__title {
     font-size: 2.25rem;
   }
 }
+@media (min-width: 90em) {
+  .footer__title {
+    font-size: 2.5rem;
+  }
+}
 .footer__text {
   color: #fafafa;
+  /* Extra large devices 1440px:90em*/
+}
+@media (min-width: 90em) {
+  .footer__text {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 90em) {
+  .item-position {
+    justify-self: flex-end;
+  }
 }
 
 /* CSS RESET---------------------------------------------------- */

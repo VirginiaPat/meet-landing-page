@@ -1,6 +1,6 @@
 /* FOOTER -CTA SECTION */
 .footer {
-  &_text__btn__container {
+  &__text__btn__container {
     background-image: linear-gradient(
         to right bottom,
         rgba($color-cyan-600, 0.8),
@@ -9,6 +9,7 @@
       url("../../assets/mobile/image-footer.jpg");
     background-size: cover;
     background-position: top;
+    width: 100vw;
 
     padding: px-to-rem(64px) px-to-rem(32px);
 
@@ -29,6 +30,19 @@
 
       padding: px-to-rem(64px) px-to-rem(130px);
     }
+
+    /* Extra large devices 1440px:90em*/
+    @media (min-width: 90em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-cyan-600, 0.8),
+          rgba($color-cyan-600, 0.8)
+        ),
+        url("../../assets/desktop/image-footer.jpg");
+      padding: px-to-rem(112px) px-to-rem(160px);
+
+      @include grid-footer;
+    }
   }
 
   &__title {
@@ -39,10 +53,26 @@
     @media (min-width: 48em) {
       font-size: px-to-rem(36px);
     }
+
+    /* Extra large devices 1440px:90em*/
+    @media (min-width: 90em) {
+      font-size: px-to-rem(40px);
+    }
   }
 
   &__text {
     @extend %text-preset-4--tablet;
     color: $color-white;
+
+    /* Extra large devices 1440px:90em*/
+    @media (min-width: 90em) {
+      font-size: px-to-rem(18px);
+    }
+  }
+}
+
+.item-position {
+  @media (min-width: 90em) {
+    justify-self: flex-end;
   }
 }
