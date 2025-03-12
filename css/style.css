@@ -41,9 +41,13 @@
   background-color: #4d96a9;
   transition: all 0.2s;
 }
-.btn--cyan:hover, .btn--cyan:active, .btn--cyan:focus {
+.btn--cyan:hover, .btn--cyan:active {
   background-color: #71c0d4;
   transform: scale(1.02);
+}
+.btn--cyan:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #8fe3f9;
 }
 .btn--cyan span {
   color: #8fe3f9;
@@ -53,9 +57,13 @@
   height: 3.5rem;
   background-color: #855fb1;
 }
-.btn--purple:hover, .btn--purple:active, .btn--purple:focus {
+.btn--purple:hover, .btn--purple:active {
   background-color: #b18bdd;
   transform: scale(1.02);
+}
+.btn--purple:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #d9b8ff;
 }
 .btn--purple span {
   color: #d9b8ff;
@@ -364,6 +372,7 @@
     text-align: start;
     align-items: start;
     justify-items: start;
+    max-width: 156.625rem;
   }
 }
 .footer__title {

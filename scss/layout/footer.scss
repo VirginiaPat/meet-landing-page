@@ -42,6 +42,8 @@
       padding: px-to-rem(112px) px-to-rem(160px);
 
       @include grid-footer;
+
+      max-width: px-to-rem(2506px);
     }
   }
 
