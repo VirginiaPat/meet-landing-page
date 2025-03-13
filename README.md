@@ -54,3 +54,5 @@ It is the second project I am trying Sass. I adapted the 7-1 architecture and tr
 - Netlify - [VirginiaPat](https://app.netlify.com/teams/virginia-patrika/sites)
 
 ## Acknowledgments
+
+Many thanks to @Aldikrasniqi (https://www.frontendmentor.io/profile/Aldikrasniqi) for his feedback.
